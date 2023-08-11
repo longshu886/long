@@ -1,0 +1,1 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 	Title = "卡密正确";	Text = "帅";	Icon = ""})
